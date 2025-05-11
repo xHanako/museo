@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <title>Museo de la Catedral</title>
+</head>
+<body>
+    <div class="form-wrapper">
+        <main class="form-side">
+            <a href="#">
+                <img src="./img/logo.png" alt="Logo" class="logo">
+            </a>
+            <form class="my-form" onsubmit="return verificarCodigo(event)">
+                <div class="form-welcome-row">
+                    <h1>Bienvenido al</h1>
+                    <h2>Museo de la Catedral de Santo Domingo</h2>
+                </div>
+                <div class="text-field">
+                    <label for="language">Selecciona el idioma</label>
+                    <div class="select-wrapper">
+                        <select id="language" name="language" required>
+                            <option value="es">Español</option>
+                            <option value="en">English</option>
+                           <!-- <option value="fr">Français</option>
+                            <option value="it">Italiano</option>
+                            <option value="pt">Português</option>
+                            <option value="pl">Polski</option>
+                            <option value="ru">Русский</option>
+                            <option value="de">Deutsch</option> -->
+                        </select>
+                    </div>
+                </div>                
+                <div class="text-field">
+                    <label for="password">Código numérico</label>
+                    <input id="password" type="text" name="password" placeholder="1234" maxlength="4" 
+                    inputmode="numeric" onkeypress="return soloNumeros(event)" required>
+                    <div class="error-message">El código proporcionado es incorrecto.</div>
+                </div>
+                <button id="start-experience" type="submit" class="my-form__button">Comenzar Experiencia</button>
+            </form>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
