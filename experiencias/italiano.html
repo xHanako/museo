@@ -1,14 +1,338 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
     <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
-    <title></title>
+    <title>Audioguida</title>
 </head>
+
 <body>
+    <header class="navbar">
+        <!-- <a href="../index.html" class="logo-link">
+            <img src="../img/logo.png" alt="Logo" class="logo-navbar">
+        </a> -->
+        <div class="tabs-navbar">
+            <button class="tab-button active" data-sala="0">0</button>
+            <button class="tab-button" data-sala="2">2</button>
+            <button class="tab-button" data-sala="3">3</button>
+            <button class="tab-button" data-sala="4">4</button>
+            <button class="tab-button" data-sala="5">5</button>
+            <button class="tab-button" data-sala="6">6</button>
+            <button class="tab-button" data-sala="7">7</button>
+            <button class="tab-button" data-sala="8">8</button>
+            <button class="tab-button" data-sala="9">9</button>
+            <button class="tab-button" data-sala="10">10</button>
+            <button class="tab-button" data-sala="11">11</button>
+            <button class="tab-button" data-sala="12">12</button>
+            <button class="tab-button" data-sala="13">13</button>
+            <button class="tab-button" data-sala="14">14</button>
+            <button class="tab-button invisible" data-sala="15">15</button>
+        </div>
+    </header>
+
+        <div id="salas-container">
+            <div id="sala-0" class="sala active">
+                <h2>SALA 0: ENTRATA</h2>
+                <div class="audio-item">
+                    <h3>0.1 - RECEPTION E NÀRTECE</h3>
+                    <audio controls src="../audios/italiano/0.1 - RECEPTION E NARTECE.mp3"></audio>
+                </div>
+                <div class="audio-item">
+                    <h3>0.2 - RETABLO BARROCO</h3>
+                    <audio controls src="../audios/italiano/0.2 - RETABLO BAROCCO.mp3"></audio>
+                </div>
+                <div class="audio-item">
+                    <h3>0.3 - PÚLPITO BARROCO</h3>
+                    <audio controls src="../audios/italiano/0.3 - LA VOCE DELLA CHIESA. PULPITO BAROCCO DEL XVIII SECOLO.mp3"></audio>
+                </div>
+                <div class="audio-item">
+                    <h3>0.4 - CUADRO DE LOS SEISES</h3>
+                    <audio controls src="../audios/italiano/0.4 - DIPINTO DI UNO DEI “SEISES” DI SIVIGLIA.mp3"></audio>
+                </div>
+                <div class="audio-item">
+                    <h3>0.5 - ENTRADA A SALA 1</h3>
+                    <audio controls src="../audios/italiano/0.5 - INGRESSO ALLA SALA 1 LA FEDE, UNA FORZA UNIVERSALE.mp3"></audio>
+                </div>
+            </div>
+
+            <div id="sala-2" class="sala">
+                <h2>SALA 2: L'EVANGELIZZAZIONE DI HISPANIOLA</h2>
+                <div class="audio-item">
+                    <h3>2.1 - MAPPA SUL PAVIMENTO</h3>
+                    <audio controls src="../audios/italiano/2.1 - MAPPA SUL PAVIMENTO CON CROCE DI LUCE.mp3"></audio>
+                </div>
+                <div class="audio-item">
+                    <h3>2.2 - MAPPA DI ANDRÉS MORALES</h3>
+                    <audio controls src="../audios/italiano/2.2 - MAPPA DI ANDRÉS MORALES (1516).mp3"></audio>
+                </div>
+                <div class="audio-item">
+                    <h3>2.3, 2.4 Y 2.5 - SCHERMI INTERATTIVI</h3>
+                    <audio controls src="../audios/italiano/2.3, 2.4 e 2.5 – SCHERMI INTERATTIVI SULLE DEVOZIONI MARIANE E I TEMPLI DELLE DIOCESI DEL PAESE.mp3"></audio>
+                </div>
+            </div>
+
+            <div id="sala-3" class="sala">
+                <h2>SALA 3: LA PIETRA PENTAGONALE</h2>
+                <div class="audio-item">
+                    <h3>3.1 - USO DELLA PIETRA PENTAGONALE</h3>
+                    <audio controls src="../audios/italiano/3.1 - USO DELLA PIETRA PENTAGONALE.mp3"></audio>
+                </div>
+                <div class="audio-item">
+                    <h3>3.2 - SIGNIFICATO DELLA PIETRA PENTAGONALE</h3>
+                    <audio controls src="../audios/italiano/3.2 - SIGNIFICATO DELLA PIETRA PENTAGONALE.mp3"></audio>
+                </div>
+                <div class="audio-item">
+                    <h3>3.3 - PRIME DIOCESI D’AMERICA</h3>
+                    <audio controls src="../audios/italiano/3.3 - PRIME DIOCESI D’AMERICA.mp3"></audio>
+                </div>
+                <div class="audio-item">
+                    <h3>3.4 - LA BENEDIZIONE DEL TERRENO</h3>
+                    <audio controls src="../audios/italiano/3.4 - LA BENEDIZIONE DEL TERRENO E LA POSA DELLA PRIMA PIETRA.mp3"></audio>
+                </div>
+                <div class="audio-item">
+                    <h3>3.5 - DIEGO COLÓN, E SUA MOGLIE</h3>
+                    <audio controls src="../audios/italiano/3.5 - DIEGO COLÓN, E SUA MOGLIE.mp3"></audio>
+                </div>
+            </div>
+
+            <div id="sala-4" class="sala">
+                <h2>SALA 4: I MAESTRI SCALPELLINI</h2>
+                <div class="audio-item">
+                    <h3>4.1 - CHI ERANO I MAESTRI SCALPELLINI?</h3>
+                    <audio controls src="../audios/italiano/4.1 - CHI ERANO I MAESTRI SCALPELLINI.mp3   "></audio>
+                </div>
+                <div class="audio-item">
+                    <h3>4.2 - I MESTIERI E I LORO STRUMENTI</h3>
+                    <audio controls src="../audios/italiano/4.2 - I MESTIERI E I LORO STRUMENTI.mp3"></audio>
+                </div>
+                <div class="audio-item">
+                    <h3>4.3 - TESTIMONIANZE DELLA VECCHIA CATTEDRALE</h3>
+                    <audio controls src="../audios/italiano/4.3 - TESTIMONIANZE DELLA VECCHIA CATTEDRALE..mp3"></audio>
+                </div>
+                <div class="audio-item">
+                    <h3>4.4 - LA BOTTEGA DEGLI SCALPELLINI</h3>
+                    <audio controls src="../audios/italiano/4.4 - LA BOTTEGA DEGLI SCALPELLINI.mp3"></audio>
+                </div>
+                <div class="audio-item">
+                    <h3>4.5 - LA CAVA DI SANTA BÁRBARA</h3>
+                    <audio controls src="../audios/italiano/4.5 - LA CAVA DI SANTA BÁRBARA.mp3"></audio>
+                </div>
+                <div class="audio-item">
+                    <h3>4.6 - CINQUE SECOLI DI STORIA </h3>
+                    <audio controls src="../audios/italiano/4.6 - CINQUE SECOLI DI STORIA DELLA CATTEDRALE PRIMATA DELLE AMERICHE.mp3"></audio>
+                </div>
+                <div class="audio-item">
+                    <h3>4.7 - SANTO DOMINGO NEL XVI SECOLO</h3>
+                    <audio controls src="../audios/italiano/4.7 - SANTO DOMINGO NEL XVI SECOLO.mp3"></audio>
+                </div>
+                <div class="audio-item">
+                    <h3>4.8 - IL CAMPANILE FANTASMA</h3>
+                    <audio controls src="../audios/italiano/4.8 - IL CAMPANILE FANTASMA.mp3"></audio>
+                </div>
+                <div class="audio-item">
+                    <h3>4.9 - IL NOME DELLE CAMPANE</h3>
+                    <audio controls src="../audios/italiano/4.9 - IL NOME DELLE CAMPANE.mp3"></audio>
+                </div>
+                <div class="audio-item">
+                    <h3>4.10 - PIRATI!</h3>
+                    <audio controls src="../audios/italiano/4.10 - PIRATI.mp3"></audio>
+                </div>
+            </div>
+
+            <div id="sala-5" class="sala">
+                <h2>SALA 5: Evoluzione e storia della Cattedrale</h2>
+                <div class="audio-item">
+                    <h3>5.1 - SANTO DOMINGO</h3>
+                    <audio controls src="../audios/italiano/5.1 - SANTO DOMINGO.mp3"></audio>
+                </div>
+                <div class="audio-item">
+                    <h3>5.2 - LA COSTRUZIONE DELLA CATTEDRALE</h3>
+                    <audio controls src="../audios/italiano/5.2 - LA COSTRUZIONE DELLA CATTEDRALE PRIMATA DELLE AMERICHE, ERETTA IN 20 ANNI, TRASFORMATA NEL CORSO DI QUATTRO SECOLI.mp3"></audio>
+                </div>
+                <div class="audio-item">
+                    <h3>5.3 - COME SI COSTRUISCE UNA VOLTA</h3>
+                    <audio controls src="../audios/italiano/5.3 - COME SI COSTRUISCE UNA VOLTA.mp3"></audio>
+                </div>
+                <div class="audio-item">
+                    <h3>5.4 - I COLORI DELLA PORTA NORD</h3>
+                    <audio controls src="../audios/italiano/5.4 - I COLORI DELLA PORTA NORD.mp3"></audio>
+                </div>
+                <div class="audio-item">
+                    <h3>5.5 - LA SCALA A CHIOCCIOLA</h3>
+                    <audio controls src="../audios/italiano/5.5 - LA SCALA A CHIOCCIOLA.mp3"></audio>
+                </div>
+                <div class="audio-item">
+                    <h3>5.6 - UNA CATTEDRALE TARDOGOTICA</h3>
+                    <audio controls src="../audios/italiano/5.6 - UNA CATTEDRALE TARDOGOTICA.mp3"></audio>
+                </div>
+                <div class="audio-item">
+                    <h3>5.7 - LA CATTEDRALE OGGI</h3>
+                    <audio controls src="../audios/italiano/5.7 - LA CATTEDRALE OGGI.mp3"></audio>
+                </div>
+                </div>
+            </div>
+
+            <div id="sala-6" class="sala">
+                <h2>SALA 6: Il lapidario degli immortali</h2>
+                <div class="audio-item">
+                    <h3>6.1 - IL LAPIDARIO DEGLI IMMORTALI</h3>
+                    <audio controls src="../audios/italiano/6.1 - LA CATTEDRALE COME DIMORA DEL RIPOSO ETERNO.mp3"></audio>
+                </div>
+            </div>
+
+            <div id="sala-7" class="sala">
+                <h2>SALA 7: Da carcere a museo</h2>
+                <div class="audio-item">
+                    <h3>7.1 - Da carcere a museo</h3>
+                    <audio controls src="../audios/italiano/7.1 - OGGETTI RITROVATI.mp3"></audio>
+                </div>
+            </div>
+
+            <div id="sala-8" class="sala">
+                <h2>SALA 8: Le indagini archeologiche</h2>
+                <div class="audio-item">
+                    <h3>8.1 - ALLA RICERCA DEL PASSATO DELLA CATTEDRALE</h3>
+                    <audio controls src="../audios/italiano/8.1 - ALLA RICERCA DEL PASSATO DELLA CATTEDRALE.mp3"></audio>
+                </div>
+                <div class="audio-item">
+                    <h3>8.2 - LE LEGGI DELLA STRATIGRAFIA</h3>
+                    <audio controls src="../audios/italiano/8.2 - LE LEGGI DELLA STRATIGRAFIA.mp3"></audio>
+                </div>
+                <div class="audio-item">
+                    <h3>8.3 - LE CULTURE OSTIONOIDE E TAÍNA</h3>
+                    <audio controls src="../audios/italiano/8.3 - LE CULTURE OSTIONOIDE E TAÍNA.mp3"></audio>
+                </div>
+                <div class="audio-item">
+                    <h3>8.4 - LA MODA COME STRUMENTO DI DOMINAZIONE</h3>
+                    <audio controls src="../audios/italiano/8.4 - LA MODA COME STRUMENTO DI DOMINAZIONE.mp3"></audio>
+                </div>
+                <div class="audio-item">
+                    <h3>8.5 - L'ARCHEOLOGIA DEI DEFUNTI</h3>
+                    <audio controls src="../audios/italiano/8.5 - L'ARCHEOLOGIA DEI DEFUNTI.mp3"></audio>
+                </div>
+            </div>
+
+            <div id="sala-9" class="sala">
+                <h2>SALA 9: Le tombe di Cristoforo Colombo</h2>
+                <div class="audio-item">
+                    <h3>9.1 - I VIAGGI DELL’AMMIRAGLIO DOPO LA SUA MORT</h3>
+                    <audio controls src="../audios/italiano/9.1 - LE TOMBE DI CRISTOFORO COLOMBO. I VIAGGI DELL’AMMIRAGLIO DOPO LA SUA MORT.mp3"></audio>
+                </div>
+            </div>
+
+            <div id="sala-10" class="sala">
+                <h2>Sala 10: La Vergine della Altagracia</h2>
+                <div class="audio-item">
+                    <h3>10.1 - Madre spirituale del popolo dominicano</h3>
+                    <audio controls src="../audios/italiano/10.1 - CAPPELLA NOSTRA SIGNORA DI ALTAGRACIA.mp3"></audio>
+                </div>
+                <div class="audio-item">
+                    <h3>10.2 - LAPIDA MONSIGNORE NOUEL</h3>
+                    <audio controls src="../audios/italiano/10.2 LAPIDA MONSIGNORE NOUEL.mp3"></audio>
+                </div>
+            </div>
+
+            <div id="sala-11" class="sala">
+                <h2>SALA 11: La facciata Ovest</h2>
+                <div class="audio-item">
+                    <h3>11.1 - FACCIATA DELLA CATTEDRALE</h3>
+                    <audio controls src="../audios/italiano/11.1 – LA FACCIATA OVEST O PORTA DEL PERDONO.mp3"></audio>
+                </div>
+            </div>
+
+            <div id="sala-12" class="sala">
+                <h2>SALA 12: El coro basso</h2>
+                <div class="audio-item">
+                    <h3>12.1 - CORO BASSO</h3>
+                    <audio controls src="../audios/italiano/12.1 - CORO BASSO.mp3"></audio>
+                </div>
+                <div class="audio-item">
+                    <h3>12.2 - TRONO ARCIVESCOVILE</h3>
+                    <audio controls src="../audios/italiano/12.2 - TRONO ARCIVESCOVILE.mp3"></audio>
+                </div>
+                <div class="audio-item">
+                    <h3>12.3 - FACISTOLIO</h3>
+                    <audio controls src="../audios/italiano/12.3 - FACISTOLIO.mp3"></audio>
+                </div>
+                <div class="audio-item">
+                    <h3>12.4 - TENEBRARIO A DODICI CANDELE</h3>
+                    <audio controls src="../audios/italiano/12.4 - TENEBRARIO A DODICI CANDELE DEL XVI SECOLO.mp3"></audio>
+                </div>
+            </div>
+
+            <div id="sala-13" class="sala">
+                <h2>SALA 13: Confraternite e processioni</h2>
+                <div class="audio-item">
+                    <h3>13.1 - LE CONFRATERNITE</h3>
+                    <audio controls src="../audios/italiano/13.1 - LE CONFRATERNITE DELLA CATTEDRALE DI SANTO DOMINGO.mp3"></audio>
+                </div>
+                <div class="audio-item">
+                    <h3>13.2 - LA FEDE SEMPLICE</h3>
+                    <audio controls src="../audios/italiano/13.2 - LA FEDE SEMPLICE.mp3"></audio>
+                </div>
+                <div class="audio-item">
+                    <h3>13.3 - PROCESSIONI</h3>
+                    <audio controls src="../audios/italiano/13.3 - PROCESSIONI E PELLEGRINAGGI DELLA CATTEDRALE DI SANTO DOMINGO.mp3"></audio>
+                </div>
+                <div class="audio-item">
+                    <h3>13.4 - UN PAPA A SANTO DOMINGO</h3>
+                    <audio controls src="../audios/italiano/13.4 - UN PAPA A SANTO DOMINGO.mp3"></audio>
+                </div>
+            </div>
+
+            <div id="sala-14" class="sala">
+                <h2>Sala 14: Il Tesoro</h2>
+                <div class="audio-item">
+                    <h3>14.1 - LA STORIA DEL TESORO</h3>
+                    <audio controls src="../audios/italiano/14.1 - LA STORIA DEL TESORO DELLA CATTEDRALE.mp3"></audio>
+                </div>
+                <div class="audio-item">
+                    <h3>14.2 - GLI ARGENTIERI</h3>
+                    <audio controls src="../audios/italiano/14.2 - GLI ARGENTIERI.mp3"></audio>
+                </div>
+                <div class="audio-item">
+                    <h3>14.3 - UN REGALO SPECIALE</h3>
+                    <audio controls src="../audios/italiano/14.3 - UN REGALO SPECIALE.mp3"></audio>
+                </div>
+                <div class="audio-item">
+                    <h3>14.4 - CUSTODIA DA POGGIO</h3>
+                    <audio controls src="../audios/italiano/14.4 - CUSTODIA DA POGGIO.mp3"></audio>
+                </div>
+                <div class="audio-item">
+                    <h3>14.5 - L’ORDINE DELLA MESSA</h3>
+                    <audio controls src="../audios/italiano/14.5 - L’ORDINE DELLA MESSA. GIOIELLI DELLE IMMAGINI.mp3"></audio>
+                </div>
+                <div class="audio-item">
+                    <h3>14.6 - GIOIELLI TRASFORMATI IN EXVOTO</h3>
+                    <audio controls src="../audios/italiano/14.6 - GIOIELLI TRASFORMATI IN EXVOTO.mp3"></audio>
+                </div>
+                <div class="audio-item">
+                    <h3>14.7 - ARCA EUCARISTICA</h3>
+                    <audio controls src="../audios/italiano/14.7 - ARCA EUCARISTICA.mp3"></audio>
+                </div>
+                <div class="audio-item">
+                    <h3>14.8 - I RELIQUIARI</h3>
+                    <audio controls src="../audios/italiano/14.8 - I RELIQUIARI.mp3"></audio>
+                </div>
+                <div class="audio-item">
+                    <h3>14.9 - L’USO LITURGICO</h3>
+                    <audio controls src="../audios/italiano/14.9 - L’USO LITURGICO.mp3"></audio>
+                </div>
+            </div>
+
+            <div id="sala-15" class="sala">
+            <h2>Room 15: CHIUSURA E SALUTI</h2>
+            <div class="audio-item">
+                <h3>15.1 - CHIUSURA E SALUTI</h3>
+                <audio controls src="../audios/italiano/15.1 - CHIUSURA E SALUTI.mp3"></audio>
+            </div>
+        </div>
+        </div>
 
     <script src="../script.js"></script>
 </body>
+
 </html>
