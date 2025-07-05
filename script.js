@@ -2,7 +2,7 @@ function verificarCodigo(event) {
     event.preventDefault();
 
     const codigoIngresado = document.getElementById("password").value;
-    const codigoCorrecto = "8715";
+    const codigoCorrecto = "5478";
     const errorMessage = document.querySelector(".error-message");
     const form = document.querySelector(".my-form");
     const language = document.getElementById('language').value;
