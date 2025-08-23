@@ -10,7 +10,7 @@
     --border: #DFE3E6;
     --btn-bg: #EDEDED;
     --input-bg: #F1F2F3;
-    --background: #ebcd15;
+    --background: #fddb40;
     --error: #e5484d;
 }
 
@@ -398,4 +398,5 @@ body, html {
 
 .invisible {
     display: none;
+
 }
