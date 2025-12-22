@@ -96,15 +96,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-// function updateHeaderValue(numeroSala) {
-//     const btn0 = document.querySelector('.tab-button[data-sala="0"]');
-//     const btn15 = document.querySelector('.tab-button[data-sala="15"]');
+function updateHeaderValue(numeroSala) {
+    const btn0 = document.querySelector('.tab-button[data-sala="0"]');
+    const btn15 = document.querySelector('.tab-button[data-sala="15"]');
 
-//     if ([12, 13, 14, 15].includes(numeroSala)) {
-//         if (btn0) btn0.classList.add("invisible");
-//         if (btn15) btn15.classList.remove("invisible");
-//     } else {
-//         if (btn0) btn0.classList.remove("invisible");
-//         if (btn15) btn15.classList.add("invisible");
-//     }
-// }
+    // if ([12, 13, 14, 15].includes(numeroSala)) {
+    //     if (btn0) btn0.classList.add("invisible");
+    //     if (btn15) btn15.classList.remove("invisible");
+    // } else {
+    //     if (btn0) btn0.classList.remove("invisible");
+    //     if (btn15) btn15.classList.add("invisible");
+    // }
+}
