@@ -272,7 +272,6 @@ body {
     margin: 0.5rem 0;
 }
 
-/* Agrupador visual de botones en filas */
 .tabs-navbar {
     display: flex;
     flex-wrap: wrap;
@@ -280,7 +279,6 @@ body {
     justify-content: flex-end;
 }
 
-/* Botones */
 .tab-button {
     background: var(--primary-lighter);
     color: white;
@@ -315,12 +313,10 @@ body {
     flex-wrap: wrap;
 }
 
-/* Espacio para la navbar fija */
 body {
     padding-top: 6.5rem;
 }
 
-/* Logo */
 .logo-navbar {
     height: 3rem;
 }
@@ -330,11 +326,10 @@ body {
     align-items: center;
 }
 
-/* Móvil: divide en dos filas de 7 botones */
 @media (max-width: 768px) {
     .navbar {
         position: fixed;
-        top: 0; /* Asegura que esté arriba del todo */
+        top: 0;
         left: 0;
         width: 100%;
         padding: 0.5rem 1rem;
@@ -343,7 +338,7 @@ body {
         justify-content: space-between;
         gap: 1rem;
         z-index: 1000;
-        background: var(--background); /* Fondo sólido o semitransparente */
+        background: var(--background);
         flex-wrap: wrap;
     }    
 
@@ -362,7 +357,6 @@ body {
     }
 }
 
-/* Contenedor principal de las salas */
 #salas-container {
     max-width: 100%;
     width: 100%;
@@ -371,14 +365,12 @@ body {
     margin: 0 auto;
 }
 
-/* Cada sala centrada horizontalmente */
 .sala {
     max-width: 600px;
     margin: 0 auto;
-    padding-bottom: 3rem; /* Espacio inferior por si hay muchos audios */
+    padding-bottom: 3rem;
 }
 
-/* Asegura que el audio no se desborde en pantallas pequeñas */
 audio {
     width: 100%;
     max-width: 100%;
@@ -386,12 +378,10 @@ audio {
     margin: 0.5rem auto;
 }
 
-/* Aumentamos el espacio superior del body si es necesario */
 body {
-    padding-top: 6rem; /* Asegúrate que esto cubra la altura total del header */
+    padding-top: 6rem;
 }
 
-/* Opcional: Forzar modo móvil con un ancho máximo */
 body, html {
     max-width: 480px;
     margin: 0 auto;
