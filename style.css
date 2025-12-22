@@ -27,6 +27,10 @@ body {
     background: var(--background);
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 * {
     text-transform: uppercase;
     margin: 0;
