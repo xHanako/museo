@@ -6,12 +6,11 @@ function verificarCodigo(event) {
     const errorMessage = document.querySelector(".error-message");
     const form = document.querySelector(".my-form");
     const language = document.getElementById("language").value;
-    const version = document.getElementById("version").value; // NUEVO
+    const version = document.getElementById("version").value;
 
     if (codigoIngresado === codigoCorrecto) {
         sessionStorage.setItem("accesoPermitido", "true");
 
-        // Carpeta base según versión
         let url = `experiencias/${version}/`;
 
         switch (language) {
@@ -46,22 +45,18 @@ function soloNumeros(event) {
     return /^[0-9]$/.test(key);
 }
 
-// Esperamos a que el DOM esté listo
 document.addEventListener("DOMContentLoaded", () => {
 
-    // Protección de acceso a experiencias
     if (window.location.pathname.includes("/experiencias/")) {
         const acceso = sessionStorage.getItem("accesoPermitido");
 
         if (acceso !== "true") {
-            window.location.href = "../../index.html"; // Ajusta según tu estructura
+            window.location.href = "../../index.html";
         } else {
-            // Borra el permiso para que al recargar vuelva al index
             sessionStorage.removeItem("accesoPermitido");
         }
     }
 
-    // Tabs de salas
     document.querySelectorAll(".tab-button").forEach(button => {
         button.addEventListener("click", () => {
             const numeroSala = parseInt(button.dataset.sala);
@@ -82,7 +77,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Manejo de audios
     let currentAudio = null;
     const audios = document.querySelectorAll("audio");
 
@@ -102,16 +96,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-// Función para ocultar/mostrar botones según sala
-function updateHeaderValue(numeroSala) {
-    const btn0 = document.querySelector('.tab-button[data-sala="0"]');
-    const btn15 = document.querySelector('.tab-button[data-sala="15"]');
+// function updateHeaderValue(numeroSala) {
+//     const btn0 = document.querySelector('.tab-button[data-sala="0"]');
+//     const btn15 = document.querySelector('.tab-button[data-sala="15"]');
 
-    if ([12, 13, 14, 15].includes(numeroSala)) {
-        if (btn0) btn0.classList.add("invisible");
-        if (btn15) btn15.classList.remove("invisible");
-    } else {
-        if (btn0) btn0.classList.remove("invisible");
-        if (btn15) btn15.classList.add("invisible");
-    }
-}
+//     if ([12, 13, 14, 15].includes(numeroSala)) {
+//         if (btn0) btn0.classList.add("invisible");
+//         if (btn15) btn15.classList.remove("invisible");
+//     } else {
+//         if (btn0) btn0.classList.remove("invisible");
+//         if (btn15) btn15.classList.add("invisible");
+//     }
+// }
