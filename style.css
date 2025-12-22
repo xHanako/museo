@@ -90,6 +90,7 @@ body {
     gap: 1.25rem;
     max-width: 26rem;
     width: 100%;
+    padding-bottom: 6rem;
 }
 
 .my-form__button {

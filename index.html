@@ -13,14 +13,16 @@
 <body>
     <div class="form-wrapper">
         <main class="form-side">
-            <a href="#">
+            <!-- <a href="#">
                 <img src="./img/logo.png" alt="Logo" class="logo">
-            </a>
+            </a> -->
             <form class="my-form" onsubmit="return verificarCodigo(event)">
                 <div class="form-welcome-row">
                     <h1>Bienvenido al</h1>
                     <h2>Museo de la Catedral de Santo Domingo</h2>
                 </div>
+
+                <!-- Selector de idioma -->
                 <div class="text-field">
                     <label for="language">Selecciona el idioma</label>
                     <div class="select-wrapper">
@@ -29,20 +31,41 @@
                             <option value="en">English</option>
                             <option value="fr">Français</option>
                             <option value="it">Italiano</option>
-                            <!-- <option value="pt">Português</option>
-                            <option value="pl">Polski</option>
-                            <option value="ru">Русский</option> -->
                             <option value="de">Deutsch</option>
                         </select>
                     </div>
-                </div>                
+                </div>
+
+                <!-- NUEVO selector de versión -->
+                <div class="text-field">
+                    <label for="version">Selecciona la versión</label>
+                    <div class="select-wrapper">
+                        <select id="version" name="version" required>
+                            <option value="long">Versión larga</option>
+                            <option value="short" selected>Versión corta</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Código -->
                 <div class="text-field">
                     <label for="password">Código numérico</label>
-                    <input id="password" type="text" name="password" placeholder="1234" maxlength="4" 
-                    inputmode="numeric" onkeypress="return soloNumeros(event)" required>
+                    <input
+                        id="password"
+                        type="text"
+                        name="password"
+                        placeholder="1234"
+                        maxlength="4"
+                        inputmode="numeric"
+                        onkeypress="return soloNumeros(event)"
+                        required
+                    >
                     <div class="error-message">El código proporcionado es incorrecto.</div>
                 </div>
-                <button id="start-experience" type="submit" class="my-form__button">Comenzar Experiencia</button>
+
+                <button id="start-experience" type="submit" class="my-form__button">
+                    Comenzar Experiencia
+                </button>
             </form>
         </main>
     </div>
@@ -50,4 +73,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
