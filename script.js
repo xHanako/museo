@@ -94,6 +94,16 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     });
+
+    const splash = document.getElementById("splash-screen");
+    if (splash) {
+        setTimeout(() => {
+            splash.style.opacity = 0;
+            setTimeout(() => {
+                splash.remove();
+            }, 500);
+    }, 1000); // duration 
+}
 });
 
 function updateHeaderValue(numeroSala) {
