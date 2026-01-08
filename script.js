@@ -2,7 +2,7 @@ function verificarCodigo(event) {
     event.preventDefault();
 
     const codigoIngresado = document.getElementById("password").value;
-    const codigoCorrecto = "5104";
+    const codigoCorrecto = "6429";
     const errorMessage = document.querySelector(".error-message");
     const form = document.querySelector(".my-form");
     const language = document.getElementById("language").value;
@@ -118,3 +118,4 @@ function updateHeaderValue(numeroSala) {
         if (btn15) btn15.classList.add("invisible");
     }
 }
+
